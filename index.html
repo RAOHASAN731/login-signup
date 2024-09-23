@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chat App with Friends and Photos</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="auth">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button id="login-btn">Login</button>
+        <button id="signup-btn">Signup</button>
+        <p id="message"></p>
+      </div>
+
+      <div id="chat" style="display: none">
+        <h2>Chat Room</h2>
+        <div id="messages"></div>
+        <input type="text" id="message-input" placeholder="Type a message..." />
+        <input type="file" id="file-input" />
+        <button id="send-btn">Send</button>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
